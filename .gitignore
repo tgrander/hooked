@@ -1,0 +1,11 @@
+.jekyll-metadata
+_site/
+.DS_Store
+/.rbenv-version
+/vendor/gems/
+/bin/
+/.bundle/
+.sass-cache/
+*.*~
+_release
+*.map
