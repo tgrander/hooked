@@ -19,7 +19,7 @@
 }
 .splash-content-wrapper {
   height: 75%;
-  width: 80%;
+  width: 66%;
   position: relative;
 }
 .maxisms-logo,
@@ -65,4 +65,10 @@
 .maxisms-logo img {
   width: 150px;
   height: auto;
+}
+.premier-info {
+  font-style: $font-size-m2;
+}
+.learn-more .xxl-font {
+  font-size: $font-size-xxl;
 }
