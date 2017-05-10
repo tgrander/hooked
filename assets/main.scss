@@ -1,6 +1,6 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway+Light');
 
 @import '../_sass/_variables.scss';
 @import '../_sass/_splash-page.scss';
@@ -8,4 +8,5 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
+  color: black;
 }
