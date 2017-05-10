@@ -1,31 +1,50 @@
+.splash-page,
+.splash-content-wrapper,
+.splash-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .splash-page {
   background: url('../images/splash.png');
   background-size: cover;
   background-position: 50% 50%;
   height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .splash-content-wrapper {
-
+  height: 75%;
+  width: 80%;
+  position: relative;
 }
-.maxisms-logo {
-
+.maxisms-logo,
+.premier-info,
+.learn-more,
+.watch-trailer {
+  position: absolute;
 }
+.maxisms-logo,
 .premier-info {
-
+  top: 0;
+}
+.maxisms-logo,
+.learn-more {
+  left: 0;
+}
+.premier-info,
+.watch-trailer {
+  right: 0;
+}
+.learn-more,
+.watch-trailer {
+  bottom: 0;
+}
+.splash-header {
+  flex-direction: column;
 }
 .movie-title {
 
 }
 .caption {
-
-}
-.learn-more {
-
-}
-.watch-trailer {
 
 }
