@@ -1,5 +1,8 @@
 @import './_variables.scss';
 
+.splash-page {
+  color: white;
+}
 .splash-page,
 .splash-content-wrapper,
 .splash-header {
@@ -49,7 +52,7 @@
   border-radius: 50px;
   padding: 20px;
   cursor: pointer;
-  color: $black;
+  color: white;
 }
 .movie-title {
   font-size: $big-title;
