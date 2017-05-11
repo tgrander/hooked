@@ -72,6 +72,7 @@
   font-size: $font-size-m2;
 }
 .learn-more .xxl-font {
+  flex-direction: row;
   font-size: $font-size-xxl;
 }
 
@@ -106,5 +107,8 @@
   .maxisms-logo,
   .learn-more {
     left: 0;
+  }
+  .learn-more .xxl-font {
+    flex-direction: column;
   }
 }
