@@ -1,24 +1,34 @@
 @import './_variables.scss';
 
-.splash-page {
-  color: white;
-}
-.splash-page,
-.splash-content-wrapper,
-.splash-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.splash-page {
-  background: url('../images/splash.png');
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.splash-header,
+/* POSITIONING */
+.learn-more,
+.watch-trailer,
 .splash-content-wrapper {
-  flex-direction: column;
+  position: relative;
 }
+.maxisms-logo,
+.premier-info,
+.learn-more,
+.watch-trailer {
+  position: absolute;
+}
+.watch-trailer,
+.premier-info {
+  right: 0;
+}
+.learn-more,
+.watch-trailer {
+  bottom: 0;
+}
+.maxisms-logo,
+.learn-more {
+  left: 0;
+}
+.maxisms-logo {
+  top: $vertical-spacing;
+}
+
+/* HEIGHT AND WIDTH */
 .splash-page,
 .splash-content-wrapper {
   height: 100vh;
@@ -29,25 +39,47 @@
 .movie-title {
   width: 100%;
 }
+.maxisms-logo img {
+  width: 150px;
+  height: auto;
+}
+
+/* FONT */
+.splash-page {
+  color: white;
+}
+.caption,
+.premier-info {
+  font-size: $font-size-m2;
+}
 .splash-content-wrapper {
   text-align: center;
 }
-.splash-content-wrapper > *:not(:last-child) {
-  margin-bottom: $vertical-spacing;
+
+/* FLEX BOX */
+.splash-page,
+.splash-content-wrapper,
+.splash-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.maxisms-logo {
-  position: absolute;
-  top: $vertical-spacing;
+.splash-header {
+  flex-direction: column;
 }
-.premier-info,
-.learn-more,
-.watch-trailer,
-.splash-content-wrapper {
-  position: relative;
+.learn-more .xxl-font {
+  flex-direction: column;;
+  font-size: $font-size-xxl;
 }
-.movie-title {
-  margin-bottom: $vertical-spacing;
+
+/* BACKGROUND */
+.splash-page {
+  background: url('../images/splash.png');
+  background-size: cover;
+  background-position: 50% 50%;
 }
+
+/* OTHER */
 .watch-trailer {
   border: 1px solid;
   border-radius: 50px;
@@ -57,17 +89,10 @@
   text-decoration: none;
   font-size: 24px;
 }
-.caption,
-.premier-info {
-  font-size: $font-size-m2;
-}
-.maxisms-logo img {
-  width: 150px;
-  height: auto;
-}
-.learn-more .xxl-font {
-  flex-direction: row;
-  font-size: $font-size-xxl;
+
+/* PADDING */
+.movie-title {
+  margin-bottom: $vertical-spacing;
 }
 
 @media only screen and (min-width: $desktop) {
@@ -77,35 +102,11 @@
     position: relative;
     flex-direction: row;
   }
-  .splash-content-wrapper > *:not(:last-child) {
-    margin-bottom: 0;
-  }
-  .maxisms-logo,
-  .premier-info,
-  .learn-more,
-  .watch-trailer {
-    position: absolute;
-  }
   .maxisms-logo,
   .premier-info {
     top: 0;
   }
-  .learn-more,
-  .watch-trailer {
-    bottom: 0;
-  }
-  .premier-info,
-  .watch-trailer {
-    right: 0;
-  }
   .caption {
     font-size: $font-size-xl;
-  }
-  .maxisms-logo,
-  .learn-more {
-    left: 0;
-  }
-  .learn-more .xxl-font {
-    flex-direction: column;
   }
 }
