@@ -1,0 +1,26 @@
+@import './_variables.scss';
+
+.header,
+.paragraph {
+  text-align: center;
+}
+.header {
+  font-family: 'Playfair Display';
+  font-size: 24px;
+}
+.paragraph {
+  font-size: $font-size-m;
+}
+
+@media only screen and (min-width: $desktop) {
+  .header,
+  .paragraph {
+    text-align: left;
+  }
+  .header {
+    font-size: $font-size-xxl;
+  }
+  .paragraph {
+    font-size: $font-size-xl;
+  }
+}
