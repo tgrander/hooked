@@ -17,28 +17,29 @@
   height: 100vh;
   width: 100%;
 }
+.splash-header,
 .splash-content-wrapper {
-  // modify for mobile
-  height: 75%;
-  width: 66%;
+  flex-direction: column;
+}
+.splash-content-wrapper {
+  height: 100vh;
+  width: 100%;
   position: relative;
+  text-align: center;
+}
+.splash-content-wrapper > *:not(:last-child) {
+  margin-bottom: $vertical-spacing;
 }
 .maxisms-logo {
   position: absolute;
+  top: $vertical-spacing;
 }
 .premier-info,
 .learn-more,
 .watch-trailer {
   position: relative;
 }
-.maxisms-logo,
-.premier-info {
-  top: 0;
-}
-.maxisms-logo,
-.learn-more {
-  left: 0;
-}
+
 .premier-info,
 .watch-trailer {
   right: 0;
@@ -46,9 +47,6 @@
 .learn-more,
 .watch-trailer {
   bottom: 0;
-}
-.splash-header {
-  flex-direction: column;
 }
 .watch-trailer {
   border: 1px solid;
@@ -60,19 +58,18 @@
   font-size: 24px;
 }
 .movie-title {
-  font-weight: 100;
   font-size: 20vw;
-  letter-spacing: 20px;
+  margin-bottom: 20px;
 }
 .caption {
-  font-size: $font-size-xl;
+  font-size: $font-size-m2;
 }
 .maxisms-logo img {
   width: 150px;
   height: auto;
 }
 .premier-info {
-  font-style: $font-size-m2;
+  font-size: $font-size-m2;
 }
 .learn-more .xxl-font {
   font-size: $font-size-xxl;
@@ -84,6 +81,10 @@
     height: 75%;
     width: 66%;
     position: relative;
+    flex-direction: row;
+  }
+  .splash-content-wrapper > *:not(:last-child) {
+    margin-bottom: 0;
   }
   .maxisms-logo,
   .premier-info,
@@ -91,8 +92,19 @@
   .watch-trailer {
     position: absolute;
   }
+  .maxisms-logo,
+  .premier-info {
+    top: 0;
+  }
   .movie-title {
     font-size: $big-title;
     letter-spacing: 40px;
+  }
+  .caption {
+    font-size: $font-size-xl;
+  }
+  .maxisms-logo,
+  .learn-more {
+    left: 0;
   }
 }
