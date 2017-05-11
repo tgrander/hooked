@@ -18,15 +18,18 @@
   width: 100%;
 }
 .splash-content-wrapper {
+  // modify for mobile
   height: 75%;
   width: 66%;
   position: relative;
 }
-.maxisms-logo,
+.maxisms-logo {
+  position: absolute;
+}
 .premier-info,
 .learn-more,
 .watch-trailer {
-  position: absolute;
+  position: relative;
 }
 .maxisms-logo,
 .premier-info {
@@ -57,12 +60,12 @@
   font-size: 24px;
 }
 .movie-title {
-  font-size: $big-title;
-  letter-spacing: 40px;
   font-weight: 100;
+  font-size: 20vw;
+  letter-spacing: 20px;
 }
 .caption {
-  font-size: 20px;
+  font-size: $font-size-xl;
 }
 .maxisms-logo img {
   width: 150px;
@@ -73,4 +76,23 @@
 }
 .learn-more .xxl-font {
   font-size: $font-size-xxl;
+}
+
+
+@media only screen and (min-width: $desktop) {
+  .splash-content-wrapper {
+    height: 75%;
+    width: 66%;
+    position: relative;
+  }
+  .maxisms-logo,
+  .premier-info,
+  .learn-more,
+  .watch-trailer {
+    position: absolute;
+  }
+  .movie-title {
+    font-size: $big-title;
+    letter-spacing: 40px;
+  }
 }
