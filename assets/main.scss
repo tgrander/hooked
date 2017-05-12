@@ -7,6 +7,7 @@
 @import '../_sass/_layout.scss';
 @import '../_sass/_images.scss';
 @import '../_sass/_flex-box.scss';
+@import '../_sass/_typography.scss';
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -26,29 +27,4 @@ body > *:not(:last-child) {
 }
 .sea-green {
   color: $accent-color;
-}
-
-.header,
-.paragraph {
-  text-align: center;
-}
-.header {
-  font-size: 24px;
-}
-.paragraph,
-.small-title {
-  font-size: $font-size-m;
-}
-
-@media only screen and (min-width: $desktop) {
-  .header,
-  .paragraph {
-    text-align: left;
-  }
-  .header {
-    font-size: $font-size-xxl;
-  }
-  .paragraph {
-    font-size: $font-size-xl;
-  }
 }
