@@ -1,7 +1,8 @@
 .centered,
 .row-wrap,
 .row-nowrap,
-.space-between {
+.space-between,
+.vertical-center {
   display: flex;
 }
 .centered {
@@ -22,4 +23,7 @@
 }
 .space-between {
   justify-content: space-between;
+}
+.vertical-center {
+  justify-content: center;
 }
