@@ -1,8 +1,5 @@
 @import './_variables.scss';
 
-.content-wrapper {
-  display: flex;
-}
 .horitzontal-list > *:not(:last-child) {
   margin-right: 20px;
 }
@@ -12,7 +9,6 @@
 }
 .content-wrapper {
   width: 100%;
-  flex-flow: row wrap;
   padding-left: $mobile-layout-padding;
   padding-right: $mobile-layout-padding;
   position: relative;
