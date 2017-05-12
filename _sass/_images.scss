@@ -1,0 +1,34 @@
+.medium-photo,
+.small-photo,
+.big-photo,
+.round-photo {
+  background-size: cover;
+}
+.big-photo {
+  height: 65vh;
+}
+.medium-photo,
+.small-photo {
+  height: 300px;
+  width: 100%;
+}
+.round-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-size: 50% 50%;
+}
+
+@media only screen and (min-width: $desktop) {
+  .big-photo {
+    height: 80vh;
+    width: 100vw;
+  }
+  .medium-photo {
+    width: 60vw;
+    height: 450px;
+  }
+  .small-photo {
+
+  }
+}

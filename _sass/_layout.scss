@@ -2,7 +2,8 @@
 
 /* FLEX BOX */
 .content-wrapper,
-.column {
+.column,
+.horizontal-list {
   display: flex;
 }
 .column {
@@ -10,6 +11,9 @@
 }
 .reverse {
   flex-direction: column-reverse;
+}
+.horizontal-list {
+  flex-flow: row nowrap;
 }
 
 /* MARGIN & PADDING */
