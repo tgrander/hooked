@@ -1,11 +1,27 @@
+.medium-photo,
+.small-photo,
 .big-photo {
-
+  background-size: cover;
+  background-position: 50% 50%;
 }
-
-.medium-photo {
-
+.big-photo {
+  height: 65vh;
 }
-
+.medium-photo,
 .small-photo {
-  
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: $desktop) {
+  .big-photo {
+    height: 80vh;
+  }
+  .medium-photo {
+    width: 60vw;
+    height: 375px;
+  }
+  .small-photo {
+
+  }
 }

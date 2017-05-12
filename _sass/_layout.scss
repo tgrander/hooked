@@ -1,0 +1,49 @@
+@import './_variables.scss';
+
+/* FLEX BOX */
+.content-wrapper,
+.column {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.reverse {
+  flex-direction: column-reverse;
+}
+
+/* MARGIN & PADDING */
+
+/* WIDTH */
+.big-picture-content {
+  width: 80%;
+}
+
+/* POSITIONING */
+.absolute {
+  position: absolute;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+/* ALL */
+.content-wrapper {
+  width: 100%;
+  flex-flow: row wrap;
+  padding-left: $mobile-layout-padding;
+  padding-right: $mobile-layout-padding;
+}
+
+@media only screen and (min-width: $desktop) {
+  .column {
+
+  }
+  .content-wrapper {
+    padding: 0;
+    width: 80%;
+  }
+}
