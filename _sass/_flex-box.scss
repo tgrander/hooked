@@ -1,5 +1,21 @@
-.centered {
+.centered,
+.row-wrap,
+.row-nowrap {
   display: flex;
+}
+.centered {
   justify-content: center;
   align-items: center;
+}
+.row-wrap {
+  flex-flow: row wrap;
+}
+.row-nowrap {
+  flex-flow: row nowrap;
+}
+.column {
+  flex-direction: column;
+}
+.column-reverse {
+  flex-direction: column-reverse;
 }

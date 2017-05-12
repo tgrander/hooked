@@ -1,22 +1,12 @@
 @import './_variables.scss';
 
 /* FLEX BOX */
-.content-wrapper,
-.column,
-.horizontal-list {
+.content-wrapper {
   display: flex;
 }
-.column {
-  flex-direction: column;
+.horitzontal-list > *:not(:last-child) {
+  margin-right: 20px;
 }
-.reverse {
-  flex-direction: column-reverse;
-}
-.horizontal-list {
-  flex-flow: row nowrap;
-}
-
-/* MARGIN & PADDING */
 
 /* WIDTH */
 .big-picture-content {
