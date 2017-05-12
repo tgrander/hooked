@@ -6,12 +6,34 @@
 .big-picture-content {
   width: 80%;
   color: white;
+  & > *:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .content-wrapper {
   width: 100%;
   padding-left: $mobile-layout-padding;
   padding-right: $mobile-layout-padding;
   position: relative;
+  justify-content: space-around;
+}
+.one-third {
+  width: 25%;
+}
+.two-thirds {
+  width: 55%;
+}
+.quote-separator {
+  height: 4px;
+  background-color: $accent-color;
+  position: relative;
+  width: 100%;
+  &.right {
+    float: right;
+  }
+  &.left {
+    float: left;
+  }
 }
 
 @media only screen and (min-width: $desktop) {
@@ -20,6 +42,5 @@
   }
   .content-wrapper {
     padding: 0;
-    width: 80%;
   }
 }

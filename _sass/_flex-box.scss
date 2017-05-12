@@ -1,6 +1,7 @@
 .centered,
 .row-wrap,
-.row-nowrap {
+.row-nowrap,
+.space-between {
   display: flex;
 }
 .centered {
@@ -18,4 +19,7 @@
 }
 .column-reverse {
   flex-direction: column-reverse;
+}
+.space-between {
+  justify-content: space-between;
 }
