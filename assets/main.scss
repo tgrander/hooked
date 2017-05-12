@@ -6,6 +6,7 @@
 @import '../_sass/_splash-page.scss';
 @import '../_sass/_layout.scss';
 @import '../_sass/_images.scss';
+@import '../_sass/_flex-box.scss';
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -18,4 +19,8 @@ body {
 
 body > *:not(:last-child) {
   margin-bottom: 200px;
+}
+
+.playfair-display {
+  font-family: 'Playfair Display'
 }
