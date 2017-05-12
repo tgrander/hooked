@@ -1,31 +1,15 @@
 @import './_variables.scss';
 
-/* FLEX BOX */
 .content-wrapper {
   display: flex;
 }
 .horitzontal-list > *:not(:last-child) {
   margin-right: 20px;
 }
-
-/* WIDTH */
 .big-picture-content {
   width: 80%;
   color: white;
 }
-
-/* POSITIONING */
-.absolute {
-  position: absolute;
-}
-.left {
-  left: 0;
-}
-.right {
-  right: 0;
-}
-
-/* ALL */
 .content-wrapper {
   width: 100%;
   flex-flow: row wrap;

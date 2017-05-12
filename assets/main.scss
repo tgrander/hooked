@@ -17,14 +17,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 body > *:not(:last-child) {
   margin-bottom: 150px;
 }
-
 .playfair-display {
   font-family: 'Playfair Display'
-}
-.sea-green {
-  color: $accent-color;
 }
