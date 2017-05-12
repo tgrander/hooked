@@ -4,10 +4,18 @@
 
 @import '../_sass/_variables.scss';
 @import '../_sass/_splash-page.scss';
+@import '../_sass/_layout.scss';
+@import '../_sass/_images.scss';
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   margin: 0;
   color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+body > *:not(:last-child) {
+  margin-bottom: 200px;
 }

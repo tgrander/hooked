@@ -36,6 +36,7 @@
   flex-flow: row wrap;
   padding-left: $mobile-layout-padding;
   padding-right: $mobile-layout-padding;
+  position: relative;
 }
 
 @media only screen and (min-width: $desktop) {
