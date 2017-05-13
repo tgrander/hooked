@@ -18,6 +18,12 @@
   position: relative;
   justify-content: space-around;
 }
+.content-wrapper > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+.content-wrapper .column > *:not(:last-child) {
+  margin-bottom: 40px;
+}
 .quote-separator {
   height: 4px;
   background-color: $accent-color;
@@ -43,6 +49,9 @@
   flex-direction: column;
   align-items: center;
 }
+.margin-mobile {
+  margin-bottom: 40px;
+}
 
 /* WIDTHS */
 .one-third,
@@ -59,6 +68,12 @@
 @media only screen and (min-width: $desktop) {
   .content-wrapper {
     padding: 0;
+  }
+  .content-wrapper > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .content-wrapper .column > *:not(:last-child) {
+    margin-bottom: 0;
   }
   .big-picture-content {
     flex-flow: row nowrap;
@@ -82,6 +97,9 @@
     &.big-image {
       margin-top: 25px;
     }
+  }
+  .margin-mobile {
+    margin-bottom: 0;
   }
 
   /* WIDTHS */

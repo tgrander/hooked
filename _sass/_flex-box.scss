@@ -34,4 +34,7 @@
   .row {
     flex-flow: row nowrap;
   }
+  .column-reverse {
+    flex-direction: column;
+  }
 }
