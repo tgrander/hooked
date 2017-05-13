@@ -9,6 +9,9 @@
 @import '../_sass/_flex-box.scss';
 @import '../_sass/_typography.scss';
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
@@ -18,8 +21,14 @@ body {
   flex-direction: column;
 }
 body > *:not(:last-child) {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .playfair-display {
   font-family: 'Playfair Display'
+}
+
+@media only screen and (min-width: $desktop) {
+  body > *:not(:last-child) {
+    margin-bottom: 150px;
+  }
 }

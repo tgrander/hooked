@@ -12,8 +12,6 @@
 }
 .content-wrapper {
   width: 100%;
-  padding-left: $mobile-layout-padding;
-  padding-right: $mobile-layout-padding;
   position: relative;
   justify-content: space-around;
 }
@@ -29,7 +27,7 @@
     float: left;
   }
   &.big-image {
-    margin-top: 25px;
+
   }
 }
 .list > *:not(:last-child) {
@@ -61,5 +59,10 @@
   }
   .two-by-two-min {
     width: 30%;
+  }
+  .quote-separator {
+    &.big-image {
+      margin-top: 25px;
+    }
   }
 }
