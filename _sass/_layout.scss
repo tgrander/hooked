@@ -38,24 +38,28 @@
 }
 
 /* WIDTHS */
-.one-third {
-  width: 25%;
-}
-.two-thirds {
-  width: 55%;
-}
-.two-by-two-max {
-  width: 50%;
-}
+.one-third,
+.two-thirds,
+.two-by-two-max,
 .two-by-two-min {
-  width: 30%;
+  width: 100%;
 }
+
 
 @media only screen and (min-width: $desktop) {
-  .column {
-
-  }
   .content-wrapper {
     padding: 0;
+  }
+  .one-third {
+    width: 25%;
+  }
+  .two-thirds {
+    width: 55%;
+  }
+  .two-by-two-max {
+    width: 50%;
+  }
+  .two-by-two-min {
+    width: 30%;
   }
 }
