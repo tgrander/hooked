@@ -2,7 +2,9 @@
 .row-wrap,
 .row-nowrap,
 .space-between,
-.vertical-center {
+.vertical-center,
+.column,
+.row {
   display: flex;
 }
 .centered {
@@ -15,9 +17,6 @@
 .row-nowrap {
   flex-flow: row nowrap;
 }
-.column {
-  flex-direction: column;
-}
 .column-reverse {
   flex-direction: column-reverse;
 }
@@ -26,4 +25,13 @@
 }
 .vertical-center {
   justify-content: center;
+}
+.row {
+  flex-flow: row wrap;
+}
+
+@media only screen and (min-width: $desktop) {
+  .row {
+    flex-flow: row nowrap;
+  }
 }
