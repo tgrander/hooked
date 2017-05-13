@@ -17,6 +17,9 @@
 .paragraph {
   line-height: 200%;
 }
+.bold {
+  font-weight: 400;
+}
 
 @media only screen and (min-width: $desktop) {
   .header,

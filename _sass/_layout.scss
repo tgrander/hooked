@@ -17,12 +17,6 @@
   position: relative;
   justify-content: space-around;
 }
-.one-third {
-  width: 25%;
-}
-.two-thirds {
-  width: 55%;
-}
 .quote-separator {
   height: 4px;
   background-color: $accent-color;
@@ -34,6 +28,27 @@
   &.left {
     float: left;
   }
+  &.big-image {
+    margin-top: 25px;
+  }
+}
+.list > *:not(:last-child) {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* WIDTHS */
+.one-third {
+  width: 25%;
+}
+.two-thirds {
+  width: 55%;
+}
+.two-by-two-max {
+  width: 50%;
+}
+.two-by-two-min {
+  width: 30%;
 }
 
 @media only screen and (min-width: $desktop) {
