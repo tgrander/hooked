@@ -3,30 +3,32 @@
 /* POSITIONING */
 .learn-more,
 .watch-trailer,
+.premier-info,
+.maxisms-logo,
 .splash-content-wrapper {
   position: relative;
 }
-.maxisms-logo,
-.premier-info,
+.watch-trailer,
 .learn-more,
-.watch-trailer {
+.logo-wrapper {
   position: absolute;
 }
-.watch-trailer,
-.premier-info {
+.logo-wrapper,
+.premier-info,
+.maxisms-logo {
+  top: 0;
+}
+.premier-info,
+.watch-trailer {
   right: 0;
 }
 .learn-more,
 .watch-trailer {
   bottom: 0;
 }
-.maxisms-logo,
-.learn-more {
+.learn-more,
+.maxisms-logo {
   left: 0;
-}
-.maxisms-logo,
-.premier-info {
-  top: 0;
 }
 
 /* HEIGHT AND WIDTH */
@@ -45,6 +47,9 @@
 .maxisms-logo img {
   width: 150px;
   height: auto;
+}
+.logo-wrapper {
+  width: 100%;
 }
 
 /* FONT */
@@ -79,6 +84,10 @@
   align-items: center;
 }
 .splash-header {
+  flex-direction: column;
+}
+.logo-wrapper {
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -122,5 +131,13 @@
   }
   .learn-more .text {
     font-size: 40px;
+  }
+  .logo-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .premier-info,
+  .maxisms-logo {
+    position: absolute;
   }
 }
