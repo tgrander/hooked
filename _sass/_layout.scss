@@ -29,6 +29,7 @@
   text-align: center;
 }
 .quote-separator {
+  transform: scaleX(1);
   height: 4px;
   background-color: $accent-color;
   position: relative;
