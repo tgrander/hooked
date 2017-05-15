@@ -95,7 +95,7 @@
 .splash-page {
   background: url('../images/splash.png');
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 32%;
 }
 
 /* MARGIN & PADDING */
@@ -115,6 +115,9 @@
 
 /* DESKTOP MEDIA QUERY */
 @media only screen and (min-width: $desktop) {
+  .splash-page {
+    background-position: 50% 50%;
+  }
   .splash-content-wrapper {
     height: 75%;
     width: 66%;
