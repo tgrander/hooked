@@ -17,12 +17,17 @@
   padding: 0 25px 0 25px;
   position: relative;
   justify-content: space-around;
+  height: calc(100% + 10%);
 }
 .content-wrapper > *:not(:last-child) {
   margin-bottom: 40px;
 }
 .content-wrapper .column > *:not(:last-child) {
   margin-bottom: 40px;
+}
+.list > *:not(:last-child) {
+  margin-bottom: 30px;
+  text-align: center;
 }
 .quote-separator {
   height: 4px;
@@ -40,10 +45,6 @@
   &.mission {
     width: 100%;
   }
-}
-.list > *:not(:last-child) {
-  margin-bottom: 30px;
-  text-align: center;
 }
 .column {
   flex-direction: column;
@@ -79,7 +80,7 @@
     flex-flow: row nowrap;
   }
   .column {
-
+    align-items: stretch;
   }
   .one-third {
     width: 25%;

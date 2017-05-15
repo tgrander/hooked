@@ -2,7 +2,8 @@
 .small-photo,
 .big-photo,
 .round-photo {
-  background-size: cover;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
 }
 .big-photo {
   height: 65vh;
