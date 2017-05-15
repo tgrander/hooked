@@ -1,0 +1,40 @@
+#scroll-arrow {
+  width: 45px;
+}
+
+#scroll-arrow circle,
+#scroll-arrow path {
+  fill: none;
+  stroke: #FFF;
+  stroke-width: 2
+}
+
+#scroll-arrow path {
+  animation: 1.2s bounceArrow infinite;
+}
+
+#scroll-arrow circle.hover {
+  stroke-width: 4;
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: 1.2s ease-in-out;
+}
+
+#scroll-arrow:hover circle.hover {
+  stroke-width: 4;
+  stroke-dasharray: 1300;
+}
+
+@keyframes bounceArrow {
+  0% {
+    transform: translateY(-7px)
+  }
+  50% {
+    transform: translateY(7px)
+  }
+  100% {
+    transform: translateY(-7px)
+  }
+}

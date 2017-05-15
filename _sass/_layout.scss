@@ -71,7 +71,7 @@
 }
 
 #writer-director {
-  text-align: center;
+  text-align: left;
 }
 
 @media only screen and (min-width: $desktop) {
@@ -123,9 +123,6 @@
   }
   .margin-mobile {
     margin-bottom: 0;
-  }
-  #writer-director {
-    text-align: left;
   }
 
   /* WIDTHS */
