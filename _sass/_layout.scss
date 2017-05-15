@@ -57,6 +57,17 @@
   width: 100%;
 }
 
+/* HEIGHTS */
+.content-wrapper {
+  &.story-i {
+    height: auto;
+  }
+}
+
+/* MARGINS & PADDING */
+.small-photo.story-iii {
+  margin: 0;
+}
 
 @media only screen and (min-width: $desktop) {
   .content-wrapper {
@@ -127,5 +138,17 @@
     &.mission {
       width: 55%;
     }
+  }
+
+  /* HEIGHTS */
+  .content-wrapper {
+    &.story-i {
+      height: 500px;
+    }
+  }
+
+  /* MARGINS & PADDING */
+  .small-photo.story-iii {
+    margin: 20px 0 10px 0;
   }
 }
