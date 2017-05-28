@@ -27,6 +27,9 @@ body > *:not(:last-child) {
 .playfair-display {
   font-family: 'Playfair Display'
 }
+a {
+  cursor: pointer;
+}
 
 @media only screen and (min-width: $desktop) {
   body > *:not(:last-child) {

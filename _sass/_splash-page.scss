@@ -2,13 +2,13 @@
 
 /* POSITIONING */
 .learn-more,
-.watch-trailer,
+.splash-links,
 .premier-info,
 .maxisms-logo,
 .splash-content-wrapper {
   position: relative;
 }
-.watch-trailer,
+.splash-links,
 .learn-more,
 .logo-wrapper {
   position: absolute;
@@ -19,11 +19,11 @@
   top: 0;
 }
 .premier-info,
-.watch-trailer {
+.splash-links {
   right: 0;
 }
 .learn-more,
-.watch-trailer {
+.splash-links {
   bottom: 0;
 }
 .learn-more,
@@ -62,7 +62,6 @@
 .caption {
   font-size: $font-size-m2;
 }
-.watch-trailer,
 .premier-info {
   font-size: $font-size-m;
 }
@@ -104,14 +103,6 @@
 }
 
 /* OTHER */
-.watch-trailer {
-  border: 1px solid;
-  border-radius: 50px;
-  padding: 20px;
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-}
 .partners {
   background: white;
   height: 20vh;
@@ -122,6 +113,19 @@
 }
 .partners > *:not(:last-child) {
   margin-right: 30px;
+}
+.splash-links a {
+  text-decoration: none;
+  text-align: right;
+  color: white;
+  width: 100%;
+  transition: 0.4s ease;
+}
+.splash-links a:hover {
+  color: $accent-color;
+}
+.splash-links > *:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 /* DESKTOP MEDIA QUERY */
@@ -140,8 +144,8 @@
   .premier-info {
     font: $font-size-l;
   }
-  .watch-trailer {
-    font-size: 24px;
+  .splash-links {
+    font-size: 18px;
   }
   .learn-more .text {
     font-size: 40px;
