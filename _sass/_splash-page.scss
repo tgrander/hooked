@@ -33,7 +33,7 @@
 
 /* HEIGHT AND WIDTH */
 .splash-page {
-  height: 100vh;
+  height: 80vh;
 }
 .splash-content-wrapper {
   height: 90vh;
@@ -115,6 +115,10 @@
 .partners {
   background: white;
   height: 20vh;
+}
+.partners img {
+  height: 15vh;
+  width: auto;
 }
 
 /* DESKTOP MEDIA QUERY */
