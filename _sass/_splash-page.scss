@@ -36,7 +36,7 @@
   height: 80vh;
 }
 .splash-content-wrapper {
-  height: 90vh;
+  height: 90%;
   width: 90vw;
 }
 .splash-header,
@@ -119,6 +119,9 @@
 .partners img {
   height: 15vh;
   width: auto;
+}
+.partners > *:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* DESKTOP MEDIA QUERY */
