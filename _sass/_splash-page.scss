@@ -108,11 +108,11 @@
   height: 20vh;
 }
 .partners img {
-  height: 15vh;
+  height: 10vh;
   width: auto;
 }
-.partners > *:not(:last-child) {
-  margin-right: 30px;
+.partner-links > *:not(:last-child) {
+  margin-right: 50px;
 }
 .splash-links a {
   text-decoration: none;
