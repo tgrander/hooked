@@ -92,7 +92,7 @@
 
 /* BACKGROUND */
 .splash-page {
-  background: url('../images/splash.png');
+  background: url('../images/meet_max.png');
   background-size: cover;
   background-position: 32%;
 }
@@ -108,11 +108,15 @@
   height: 20vh;
 }
 .partners img {
-  height: 10vh;
+  height: 8vh;
   width: auto;
 }
 .partner-links > *:not(:last-child) {
   margin-right: 50px;
+}
+.splash-links {
+  display: flex;
+  flex-direction: column;
 }
 .splash-links a {
   text-decoration: none;
@@ -120,12 +124,16 @@
   color: white;
   width: 100%;
   transition: 0.4s ease;
+  font-size: 14px;
 }
 .splash-links a:hover {
   color: $accent-color;
 }
 .splash-links > *:not(:last-child) {
   margin-bottom: 5px;
+}
+.premier-info > * {
+  text-align: center;
 }
 
 /* DESKTOP MEDIA QUERY */
@@ -134,7 +142,7 @@
     background-position: 50% 50%;
   }
   .splash-content-wrapper {
-    height: 75%;
+    height: 90%;
     width: 66%;
     position: relative;
   }
@@ -148,7 +156,7 @@
     font-size: 18px;
   }
   .learn-more .text {
-    font-size: 40px;
+    font-size: 24px;
   }
   .logo-wrapper {
     justify-content: space-between;
@@ -157,5 +165,8 @@
   .premier-info,
   .maxisms-logo {
     position: absolute;
+  }
+  .premier-info > * {
+    text-align: right;
   }
 }
